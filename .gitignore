@@ -1,4 +1,8 @@
 annotation/
 curation/
 New folder/
+<<<<<<< HEAD
 .DS_Store
+=======
+all_data/
+>>>>>>> origin
