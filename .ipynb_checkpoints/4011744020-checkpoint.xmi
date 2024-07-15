@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?><xmi:XMI xmlns:pos="http:///de/tudarmstadt/ukp/dkpro/core/api/lexmorph/type/pos.ecore" xmlns:tcas="http:///uima/tcas.ecore" xmlns:xmi="http://www.omg.org/XMI" xmlns:cas="http:///uima/cas.ecore" xmlns:tweet="http:///de/tudarmstadt/ukp/dkpro/core/api/lexmorph/type/pos/tweet.ecore" xmlns:morph="http:///de/tudarmstadt/ukp/dkpro/core/api/lexmorph/type/morph.ecore" xmlns:type="http:///de/tudarmstadt/ukp/clarin/webanno/api/type.ecore" xmlns:dependency="http:///de/tudarmstadt/ukp/dkpro/core/api/syntax/type/dependency.ecore" xmlns:type6="http:///de/tudarmstadt/ukp/dkpro/core/api/semantics/type.ecore" xmlns:type9="http:///de/tudarmstadt/ukp/dkpro/core/api/transform/type.ecore" xmlns:type8="http:///de/tudarmstadt/ukp/dkpro/core/api/syntax/type.ecore" xmlns:type3="http:///de/tudarmstadt/ukp/dkpro/core/api/metadata/type.ecore" xmlns:type11="http:///org/dkpro/core/api/xml/type.ecore" xmlns:type4="http:///de/tudarmstadt/ukp/dkpro/core/api/ner/type.ecore" xmlns:type10="http:///org/dkpro/core/api/pdf/type.ecore" xmlns:type5="http:///de/tudarmstadt/ukp/dkpro/core/api/segmentation/type.ecore" xmlns:type2="http:///de/tudarmstadt/ukp/dkpro/core/api/coref/type.ecore" xmlns:type7="http:///de/tudarmstadt/ukp/dkpro/core/api/structure/type.ecore" xmlns:constituent="http:///de/tudarmstadt/ukp/dkpro/core/api/syntax/type/constituent.ecore" xmlns:chunk="http:///de/tudarmstadt/ukp/dkpro/core/api/syntax/type/chunk.ecore" xmlns:custom="http:///webanno/custom.ecore" xmi:version="2.0">
+    <cas:NULL xmi:id="0"/>
+    <type3:DocumentMetaData xmi:id="8" sofa="1" begin="0" end="1213" language="x-unspecified" documentTitle="n_dialog_11_3.txt" documentId="4011744020" documentUri="file:/export/repository/project/5/document/9802/source/4011744020" collectionId="file:/export/repository/project/5/document/9802/source/" documentBaseUri="file:/export/repository/project/5/document/9802/source/" isLastSegment="false"/>
+    <type5:Sentence xmi:id="19" sofa="1" begin="0" end="5"/>
+    <type5:Sentence xmi:id="37" sofa="1" begin="7" end="12"/>
+    <type5:Sentence xmi:id="55" sofa="1" begin="14" end="19"/>
+    <type5:Sentence xmi:id="73" sofa="1" begin="21" end="25"/>
+    <type5:Sentence xmi:id="91" sofa="1" begin="27" end="39"/>
+    <type5:Sentence xmi:id="122" sofa="1" begin="41" end="54"/>
+    <type5:Sentence xmi:id="166" sofa="1" begin="56" end="126"/>
+    <type5:Sentence xmi:id="197" sofa="1" begin="128" end="196"/>
+    <type5:Sentence xmi:id="293" sofa="1" begin="198" end="253"/>
+    <type5:Sentence xmi:id="389" sofa="1" begin="323" end="335"/>
+    <type5:Sentence xmi:id="433" sofa="1" begin="337" end="360"/>
+    <type5:Sentence xmi:id="516" sofa="1" begin="363" end="435"/>
+    <type5:Sentence xmi:id="664" sofa="1" begin="540" end="581"/>
+    <type5:Sentence xmi:id="760" sofa="1" begin="651" end="658"/>
+    <type5:Sentence xmi:id="778" sofa="1" begin="660" end="737"/>
+    <type5:Sentence xmi:id="926" sofa="1" begin="739" end="743"/>
+    <type5:Sentence xmi:id="944" sofa="1" begin="745" end="834"/>
+    <type5:Sentence xmi:id="1118" sofa="1" begin="836" end="912"/>
+    <type5:Sentence xmi:id="1214" sofa="1" begin="914" end="986"/>
+    <type5:Sentence xmi:id="1375" sofa="1" begin="988" end="1089"/>
+    <type5:Sentence xmi:id="1510" sofa="1" begin="1091" end="1138"/>
+    <type5:Sentence xmi:id="1593" sofa="1" begin="1140" end="1213"/>
+    <type5:Token xmi:id="24" sofa="1" begin="0" end="5" order="0"/>
+    <type5:Token xmi:id="42" sofa="1" begin="7" end="12" order="0"/>
+    <type5:Token xmi:id="60" sofa="1" begin="14" end="19" order="0"/>
+    <type5:Token xmi:id="78" sofa="1" begin="21" end="25" order="0"/>
+    <type5:Token xmi:id="96" sofa="1" begin="27" end="32" order="0"/>
+    <type5:Token xmi:id="109" sofa="1" begin="33" end="39" order="0"/>
+    <type5:Token xmi:id="127" sofa="1" begin="41" end="47" order="0"/>
+    <type5:Token xmi:id="140" sofa="1" begin="48" end="51" order="0"/>
+    <type5:Token xmi:id="153" sofa="1" begin="52" end="54" order="0"/>
+    <type5:Token xmi:id="171" sofa="1" begin="56" end="60" order="0"/>
+    <type5:Token xmi:id="184" sofa="1" begin="123" end="126" order="0"/>
+    <type5:Token xmi:id="202" sofa="1" begin="128" end="133" order="0"/>
+    <type5:Token xmi:id="215" sofa="1" begin="134" end="139" order="0"/>
+    <type5:Token xmi:id="228" sofa="1" begin="140" end="145" order="0"/>
+    <type5:Token xmi:id="241" sofa="1" begin="172" end="180" order="0"/>
+    <type5:Token xmi:id="254" sofa="1" begin="181" end="185" order="0"/>
+    <type5:Token xmi:id="267" sofa="1" begin="186" end="191" order="0"/>
+    <type5:Token xmi:id="280" sofa="1" begin="192" end="196" order="0"/>
+    <type5:Token xmi:id="298" sofa="1" begin="198" end="202" order="0"/>
+    <type5:Token xmi:id="311" sofa="1" begin="203" end="209" order="0"/>
+    <type5:Token xmi:id="324" sofa="1" begin="210" end="219" order="0"/>
+    <type5:Token xmi:id="337" sofa="1" begin="237" end="240" order="0"/>
+    <type5:Token xmi:id="350" sofa="1" begin="241" end="243" order="0"/>
+    <type5:Token xmi:id="363" sofa="1" begin="244" end="247" order="0"/>
+    <type5:Token xmi:id="376" sofa="1" begin="248" end="253" order="0"/>
+    <type5:Token xmi:id="394" sofa="1" begin="323" end="327" order="0"/>
+    <type5:Token xmi:id="407" sofa="1" begin="328" end="330" order="0"/>
+    <type5:Token xmi:id="420" sofa="1" begin="331" end="335" order="0"/>
+    <type5:Token xmi:id="438" sofa="1" begin="337" end="341" order="0"/>
+    <type5:Token xmi:id="451" sofa="1" begin="342" end="345" order="0"/>
+    <type5:Token xmi:id="464" sofa="1" begin="346" end="349" order="0"/>
+    <type5:Token xmi:id="477" sofa="1" begin="350" end="352" order="0"/>
+    <type5:Token xmi:id="490" sofa="1" begin="353" end="357" order="0"/>
+    <type5:Token xmi:id="503" sofa="1" begin="358" end="360" order="0"/>
+    <type5:Token xmi:id="521" sofa="1" begin="363" end="365" order="0"/>
+    <type5:Token xmi:id="534" sofa="1" begin="366" end="373" order="0"/>
+    <type5:Token xmi:id="547" sofa="1" begin="374" end="377" order="0"/>
+    <type5:Token xmi:id="560" sofa="1" begin="378" end="381" order="0"/>
+    <type5:Token xmi:id="573" sofa="1" begin="382" end="386" order="0"/>
+    <type5:Token xmi:id="586" sofa="1" begin="387" end="392" order="0"/>
+    <type5:Token xmi:id="599" sofa="1" begin="413" end="416" order="0"/>
+    <type5:Token xmi:id="612" sofa="1" begin="417" end="421" order="0"/>
+    <type5:Token xmi:id="625" sofa="1" begin="422" end="425" order="0"/>
+    <type5:Token xmi:id="638" sofa="1" begin="426" end="431" order="0"/>
+    <type5:Token xmi:id="651" sofa="1" begin="432" end="435" order="0"/>
+    <type5:Token xmi:id="669" sofa="1" begin="540" end="544" order="0"/>
+    <type5:Token xmi:id="682" sofa="1" begin="545" end="548" order="0"/>
+    <type5:Token xmi:id="695" sofa="1" begin="549" end="553" order="0"/>
+    <type5:Token xmi:id="708" sofa="1" begin="554" end="559" order="0"/>
+    <type5:Token xmi:id="721" sofa="1" begin="560" end="565" order="0"/>
+    <type5:Token xmi:id="734" sofa="1" begin="566" end="574" order="0"/>
+    <type5:Token xmi:id="747" sofa="1" begin="575" end="581" order="0"/>
+    <type5:Token xmi:id="765" sofa="1" begin="651" end="658" order="0"/>
+    <type5:Token xmi:id="783" sofa="1" begin="660" end="662" order="0"/>
+    <type5:Token xmi:id="796" sofa="1" begin="663" end="666" order="0"/>
+    <type5:Token xmi:id="809" sofa="1" begin="667" end="670" order="0"/>
+    <type5:Token xmi:id="822" sofa="1" begin="671" end="674" order="0"/>
+    <type5:Token xmi:id="835" sofa="1" begin="675" end="680" order="0"/>
+    <type5:Token xmi:id="848" sofa="1" begin="681" end="682" order="0"/>
+    <type5:Token xmi:id="861" sofa="1" begin="683" end="690" order="0"/>
+    <type5:Token xmi:id="874" sofa="1" begin="718" end="721" order="0"/>
+    <type5:Token xmi:id="887" sofa="1" begin="722" end="725" order="0"/>
+    <type5:Token xmi:id="900" sofa="1" begin="726" end="731" order="0"/>
+    <type5:Token xmi:id="913" sofa="1" begin="732" end="737" order="0"/>
+    <type5:Token xmi:id="931" sofa="1" begin="739" end="743" order="0"/>
+    <type5:Token xmi:id="949" sofa="1" begin="745" end="749" order="0"/>
+    <type5:Token xmi:id="962" sofa="1" begin="750" end="753" order="0"/>
+    <type5:Token xmi:id="975" sofa="1" begin="754" end="759" order="0"/>
+    <type5:Token xmi:id="988" sofa="1" begin="760" end="762" order="0"/>
+    <type5:Token xmi:id="1001" sofa="1" begin="763" end="768" order="0"/>
+    <type5:Token xmi:id="1014" sofa="1" begin="769" end="772" order="0"/>
+    <type5:Token xmi:id="1027" sofa="1" begin="800" end="803" order="0"/>
+    <type5:Token xmi:id="1040" sofa="1" begin="804" end="808" order="0"/>
+    <type5:Token xmi:id="1053" sofa="1" begin="809" end="814" order="0"/>
+    <type5:Token xmi:id="1066" sofa="1" begin="815" end="819" order="0"/>
+    <type5:Token xmi:id="1079" sofa="1" begin="820" end="825" order="0"/>
+    <type5:Token xmi:id="1092" sofa="1" begin="826" end="828" order="0"/>
+    <type5:Token xmi:id="1105" sofa="1" begin="829" end="834" order="0"/>
+    <type5:Token xmi:id="1123" sofa="1" begin="836" end="841" order="0"/>
+    <type5:Token xmi:id="1136" sofa="1" begin="888" end="889" order="0"/>
+    <type5:Token xmi:id="1149" sofa="1" begin="890" end="894" order="0"/>
+    <type5:Token xmi:id="1162" sofa="1" begin="895" end="897" order="0"/>
+    <type5:Token xmi:id="1175" sofa="1" begin="898" end="901" order="0"/>
+    <type5:Token xmi:id="1188" sofa="1" begin="902" end="905" order="0"/>
+    <type5:Token xmi:id="1201" sofa="1" begin="906" end="912" order="0"/>
+    <type5:Token xmi:id="1219" sofa="1" begin="914" end="918" order="0"/>
+    <type5:Token xmi:id="1232" sofa="1" begin="919" end="920" order="0"/>
+    <type5:Token xmi:id="1245" sofa="1" begin="921" end="923" order="0"/>
+    <type5:Token xmi:id="1258" sofa="1" begin="924" end="927" order="0"/>
+    <type5:Token xmi:id="1271" sofa="1" begin="928" end="934" order="0"/>
+    <type5:Token xmi:id="1284" sofa="1" begin="935" end="938" order="0"/>
+    <type5:Token xmi:id="1297" sofa="1" begin="939" end="942" order="0"/>
+    <type5:Token xmi:id="1310" sofa="1" begin="943" end="947" order="0"/>
+    <type5:Token xmi:id="1323" sofa="1" begin="968" end="972" order="0"/>
+    <type5:Token xmi:id="1336" sofa="1" begin="973" end="977" order="0"/>
+    <type5:Token xmi:id="1349" sofa="1" begin="978" end="981" order="0"/>
+    <type5:Token xmi:id="1362" sofa="1" begin="982" end="986" order="0"/>
+    <type5:Token xmi:id="1380" sofa="1" begin="988" end="989" order="0"/>
+    <type5:Token xmi:id="1393" sofa="1" begin="990" end="998" order="0"/>
+    <type5:Token xmi:id="1406" sofa="1" begin="1054" end="1058" order="0"/>
+    <type5:Token xmi:id="1419" sofa="1" begin="1059" end="1061" order="0"/>
+    <type5:Token xmi:id="1432" sofa="1" begin="1062" end="1065" order="0"/>
+    <type5:Token xmi:id="1445" sofa="1" begin="1066" end="1073" order="0"/>
+    <type5:Token xmi:id="1458" sofa="1" begin="1074" end="1077" order="0"/>
+    <type5:Token xmi:id="1471" sofa="1" begin="1078" end="1081" order="0"/>
+    <type5:Token xmi:id="1484" sofa="1" begin="1082" end="1084" order="0"/>
+    <type5:Token xmi:id="1497" sofa="1" begin="1085" end="1089" order="0"/>
+    <type5:Token xmi:id="1515" sofa="1" begin="1091" end="1094" order="0"/>
+    <type5:Token xmi:id="1528" sofa="1" begin="1095" end="1101" order="0"/>
+    <type5:Token xmi:id="1541" sofa="1" begin="1102" end="1107" order="0"/>
+    <type5:Token xmi:id="1554" sofa="1" begin="1126" end="1131" order="0"/>
+    <type5:Token xmi:id="1567" sofa="1" begin="1132" end="1134" order="0"/>
+    <type5:Token xmi:id="1580" sofa="1" begin="1135" end="1138" order="0"/>
+    <type5:Token xmi:id="1598" sofa="1" begin="1140" end="1147" order="0"/>
+    <type5:Token xmi:id="1611" sofa="1" begin="1206" end="1213" order="0"/>
+    <custom:Orthography xmi:id="1624" sofa="1" begin="140" end="145" correction="داداش؟" subCategory_1="None" process="Omission" mainCategory="Punctuation"/>
+    <custom:Orthography xmi:id="1633" sofa="1" begin="181" end="185" correction="خوبم." subCategory_1="None" process="Replacement" mainCategory="Punctuation"/>
+    <custom:Orthography xmi:id="1642" sofa="1" begin="186" end="191" correction="ان شاء" subCategory_2="Merging" subCategory_1="Boundary" process="Replacement" mainCategory="Form"/>
+    <custom:Orthography xmi:id="1660" sofa="1" begin="198" end="202" correction="خوبی؟" subCategory_1="None" process="Omission" mainCategory="Punctuation"/>
+    <custom:Orthography xmi:id="1669" sofa="1" begin="203" end="209" correction="سلامتی؟" subCategory_1="None" process="Omission" mainCategory="Punctuation"/>
+    <custom:Orthography xmi:id="1651" sofa="1" begin="210" end="219" correction="ان شاء اللّه" subCategory_2="Merging" subCategory_1="Boundary" process="Replacement" mainCategory="Form"/>
+    <custom:Orthography xmi:id="1678" sofa="1" begin="248" end="253" correction="هستید." subCategory_1="None" process="Omission" mainCategory="Punctuation"/>
+    <custom:Orthography xmi:id="1705" sofa="1" begin="353" end="357" correction="دانی" subCategory_1="Consonants" process="Replacement" mainCategory="Main signs"/>
+    <custom:Orthography xmi:id="1687" sofa="1" begin="413" end="416" correction="بله،" subCategory_1="None" process="Omission" mainCategory="Punctuation"/>
+    <custom:Orthography xmi:id="1696" sofa="1" begin="432" end="435" correction="است." subCategory_1="None" process="Omission" mainCategory="Punctuation"/>
+    <custom:Orthography xmi:id="1723" sofa="1" begin="663" end="666" correction="فرقی" subCategory_2="Short vowels" subCategory_1="Vowels" process="Replacement" mainCategory="Main signs"/>
+    <custom:Orthography xmi:id="1732" sofa="1" begin="722" end="725" correction="فرقی" subCategory_2="Short vowels" subCategory_1="Vowels" process="Replacement" mainCategory="Main signs"/>
+    <custom:Orthography xmi:id="1714" sofa="1" begin="742" end="743" correction="؟" subCategory_1="None" process="Replacement" mainCategory="Punctuation"/>
+    <custom:Orthography xmi:id="1768" sofa="1" begin="804" end="808" correction="دانم" subCategory_1="Consonants" process="Replacement" mainCategory="Main signs"/>
+    <custom:Orthography xmi:id="1750" sofa="1" begin="833" end="834" correction="؛" subCategory_1="None" process="Replacement" mainCategory="Punctuation"/>
+    <custom:Orthography xmi:id="1741" sofa="1" begin="836" end="841" correction="ببارد؟" subCategory_1="None" process="Omission" mainCategory="Punctuation"/>
+    <custom:Orthography xmi:id="1759" sofa="1" begin="914" end="918" correction="خوبه؛" subCategory_1="None" process="Omission" mainCategory="Punctuation"/>
+    <custom:Orthography xmi:id="1777" sofa="1" begin="1091" end="1094" correction="خب" subCategory_2="Long vowels" subCategory_1="Vowels" process="Replacement" mainCategory="Main signs"/>
+    <custom:Orthography xmi:id="1786" sofa="1" begin="1091" end="1094" correction="خب،" subCategory_1="None" process="Omission" mainCategory="Punctuation"/>
+    <custom:Orthography xmi:id="1795" sofa="1" begin="1102" end="1107" correction="داداش." subCategory_1="None" process="Omission" mainCategory="Punctuation"/>
+    <custom:Orthography xmi:id="1804" sofa="1" begin="1135" end="1138" correction="کنم." subCategory_1="None" process="Omission" mainCategory="Punctuation"/>
+    <custom:Orthography xmi:id="1813" sofa="1" begin="1140" end="1147" correction="خداحافظ." subCategory_1="None" process="Omission" mainCategory="Punctuation"/>
+    <custom:Orthography xmi:id="1822" sofa="1" begin="1206" end="1213" correction="خداحافظ." subCategory_1="None" process="Omission" mainCategory="Punctuation"/>
+    <type:LayerDefinition xmi:id="1878" name="de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.SurfaceForm" uiName="Surface form"/>
+    <type:LayerDefinition xmi:id="1903" name="de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency" uiName="Dependency"/>
+    <type:LayerDefinition xmi:id="1971" name="webanno.custom.Others" uiName="Others"/>
+    <type:LayerDefinition xmi:id="1842" name="de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures" uiName="Morphological features"/>
+    <type:LayerDefinition xmi:id="1921" name="webanno.custom.Morphology" uiName="morphology"/>
+    <type:LayerDefinition xmi:id="1871" name="de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma" uiName="Lemma"/>
+    <type:LayerDefinition xmi:id="1885" name="de.tudarmstadt.ukp.dkpro.core.api.semantics.type.SemPred" uiName="SemPred"/>
+    <type:LayerDefinition xmi:id="1914" name="de.tudarmstadt.ukp.dkpro.core.api.transform.type.SofaChangeAnnotation" uiName="Orthography Correction"/>
+    <type:LayerDefinition xmi:id="1831" name="de.tudarmstadt.ukp.dkpro.core.api.coref.type.Coreference" uiName="Coreference"/>
+    <type:LayerDefinition xmi:id="2004" name="webanno.custom.Syntax" uiName="Syntax"/>
+    <type:LayerDefinition xmi:id="1978" name="webanno.custom.Semantic" uiName="Semantic"/>
+    <type:LayerDefinition xmi:id="1860" name="de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity" uiName="Named entity"/>
+    <type:LayerDefinition xmi:id="1849" name="de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS" uiName="Part of speech"/>
+    <type:LayerDefinition xmi:id="1896" name="de.tudarmstadt.ukp.dkpro.core.api.syntax.type.chunk.Chunk" uiName="Chunk"/>
+    <type:LayerDefinition xmi:id="1997" name="webanno.custom.Style" uiName="Style"/>
+    <type:LayerDefinition xmi:id="1948" name="webanno.custom.Orthography" uiName="Orthography"/>
+    <type:FeatureDefinition xmi:id="1881" layer="1878" name="value" uiName="Form"/>
+    <type:FeatureDefinition xmi:id="1967" layer="1948" name="subCategory_2" uiName="زیر مقوله 2"/>
+    <type:FeatureDefinition xmi:id="1910" layer="1903" name="flavor" uiName="Flavor"/>
+    <type:FeatureDefinition xmi:id="1932" layer="1921" name="others" uiName="others"/>
+    <type:FeatureDefinition xmi:id="1944" layer="1921" name="subCategory_2" uiName="زیر مقوله 2"/>
+    <type:FeatureDefinition xmi:id="2019" layer="2004" name="subCategory_1" uiName="زیرمقوله 1"/>
+    <type:FeatureDefinition xmi:id="2000" layer="1997" name="Style" uiName="Style"/>
+    <type:FeatureDefinition xmi:id="1940" layer="1921" name="subCategory_1" uiName="زیرمقوله 1"/>
+    <type:FeatureDefinition xmi:id="1928" layer="1921" name="mainCategory" uiName="مقوله اصلی"/>
+    <type:FeatureDefinition xmi:id="1888" layer="1885" name="arguments" uiName="arguments"/>
+    <type:FeatureDefinition xmi:id="1834" layer="1831" name="referenceRelation" uiName="referenceRelation"/>
+    <type:FeatureDefinition xmi:id="1924" layer="1921" name="correction" uiName="تصحیح"/>
+    <type:FeatureDefinition xmi:id="1951" layer="1948" name="correction" uiName="املای صحیح"/>
+    <type:FeatureDefinition xmi:id="1917" layer="1914" name="value" uiName="تصحیح"/>
+    <type:FeatureDefinition xmi:id="1985" layer="1978" name="mainCategory" uiName="مقوله اصلی"/>
+    <type:FeatureDefinition xmi:id="1874" layer="1871" name="value" uiName="Lemma"/>
+    <type:FeatureDefinition xmi:id="1892" layer="1885" name="category" uiName="category"/>
+    <type:FeatureDefinition xmi:id="1981" layer="1978" name="correction" uiName="تصحیح"/>
+    <type:FeatureDefinition xmi:id="2023" layer="2004" name="subCategory_2" uiName="زیر مقوله 2"/>
+    <type:FeatureDefinition xmi:id="1852" layer="1849" name="PosValue" uiName="XPOS"/>
+    <type:FeatureDefinition xmi:id="1838" layer="1831" name="referenceType" uiName="referenceType"/>
+    <type:FeatureDefinition xmi:id="1955" layer="1948" name="mainCategory" uiName="مقوله اصلی"/>
+    <type:FeatureDefinition xmi:id="1845" layer="1842" name="value" uiName="Features"/>
+    <type:FeatureDefinition xmi:id="1867" layer="1860" name="value" uiName="value"/>
+    <type:FeatureDefinition xmi:id="2015" layer="2004" name="process" uiName="فرآیند خطا"/>
+    <type:FeatureDefinition xmi:id="1993" layer="1978" name="subCategory_1" uiName="زیرمقوله 1"/>
+    <type:FeatureDefinition xmi:id="2007" layer="2004" name="correction" uiName="تصحیح"/>
+    <type:FeatureDefinition xmi:id="1936" layer="1921" name="process" uiName="فرآیند خطا"/>
+    <type:FeatureDefinition xmi:id="1863" layer="1860" name="identifier" uiName="identifier"/>
+    <type:FeatureDefinition xmi:id="1963" layer="1948" name="subCategory_1" uiName="زیرمقوله 1"/>
+    <type:FeatureDefinition xmi:id="1989" layer="1978" name="process" uiName="فرآیند"/>
+    <type:FeatureDefinition xmi:id="1906" layer="1903" name="DependencyType" uiName="Relation"/>
+    <type:FeatureDefinition xmi:id="1959" layer="1948" name="process" uiName="فرآیند خطا"/>
+    <type:FeatureDefinition xmi:id="2011" layer="2004" name="mainCategory" uiName="مقوله اصلی"/>
+    <type:FeatureDefinition xmi:id="1974" layer="1971" name="Untaggable" uiName="Untaggable"/>
+    <type:FeatureDefinition xmi:id="1856" layer="1849" name="coarseValue" uiName="UPOS"/>
+    <type:FeatureDefinition xmi:id="1899" layer="1896" name="chunkValue" uiName="Tag"/>
+    <type3:TagsetDescription xmi:id="2027" sofa="1" begin="0" end="0" layer="de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency" name="UD Universal Dependencies (v2)" input="false"/>
+    <type3:TagsetDescription xmi:id="2040" sofa="1" begin="0" end="0" layer="de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity" name="Named Entity tags" input="false"/>
+    <type3:TagsetDescription xmi:id="2053" sofa="1" begin="0" end="0" layer="webanno.custom.Orthography" name="Orthography Main Error category" input="false"/>
+    <type3:TagsetDescription xmi:id="2066" sofa="1" begin="0" end="0" layer="webanno.custom.Others" name="Untaggable" input="false"/>
+    <type3:TagsetDescription xmi:id="2079" sofa="1" begin="0" end="0" layer="de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS" name="UD Universal POS tags (v2)" input="false"/>
+    <type3:TagsetDescription xmi:id="2092" sofa="1" begin="0" end="0" layer="webanno.custom.Semantic" name="Semantic  category" input="false"/>
+    <type3:TagsetDescription xmi:id="2105" sofa="1" begin="0" end="0" layer="webanno.custom.Style" name="Style Main Error category" input="false"/>
+    <type3:TagsetDescription xmi:id="2118" sofa="1" begin="0" end="0" layer="webanno.custom.Syntax" name="Syntax Main Error category" input="false"/>
+    <type3:TagsetDescription xmi:id="2131" sofa="1" begin="0" end="0" layer="webanno.custom.Morphology" name="morphology category" input="false"/>
+    <cas:Sofa xmi:id="1" sofaNum="1" sofaID="_InitialView" mimeType="text" sofaString="بوسنی&#10;&#10;چهارم&#10;&#10;گفتگو&#10;&#10;مذکر&#10;&#10;مدرسه المهدی&#10;&#10;موضوع: فصل ها&#10;&#10;احمد                                                               علی&#10;&#10;سلام، چطوری داداش                           الحمدلله خوبم انشاء الله&#10;&#10;خوبی سلامتی انشاءالله                  شما هم خوب هستید&#10;&#10;                                                                    دیگر چه خبر؟&#10;&#10;بله، آیا شما می دونی که &#10;&#10;در پاکستان چند فصل وجود دارد؟                     بله آنجا مثل ایران است                                           &#10;&#10;                                                            چهار فصل وجود دارد. بهار، تابستان، پاییز،&#10;&#10;                                                                    زمستان.&#10;&#10;چه فرق بین فصل ایران و پاکستان                            هیچ فرق نداره جانم.&#10;&#10;است.&#10;&#10;ممکن است داداش که امروز برف                            نمی دونم جانم. شاید باران می بارد.&#10;&#10;ببارد                                               و ساعت ها بعد برف ببارد.&#10;&#10;خوبه و در فصل زمستان هوا سرد است؟                     بله، خیلی سرد است.&#10;&#10;و تابستان؟                                                        بله، در فصل تابستان هوا گرم می شود.&#10;&#10;خوب متشکرم داداش                   خواهش می کنم&#10;&#10;خداحافظ                                                           خداحافظ"/>
+    <cas:View sofa="1" members="8 19 37 55 73 91 122 166 197 293 389 433 516 664 760 778 926 944 1118 1214 1375 1510 1593 24 42 60 78 96 109 127 140 153 171 184 202 215 228 241 254 267 280 298 311 324 337 350 363 376 394 407 420 438 451 464 477 490 503 521 534 547 560 573 586 599 612 625 638 651 669 682 695 708 721 734 747 765 783 796 809 822 835 848 861 874 887 900 913 931 949 962 975 988 1001 1014 1027 1040 1053 1066 1079 1092 1105 1123 1136 1149 1162 1175 1188 1201 1219 1232 1245 1258 1271 1284 1297 1310 1323 1336 1349 1362 1380 1393 1406 1419 1432 1445 1458 1471 1484 1497 1515 1528 1541 1554 1567 1580 1598 1611 1624 1633 1642 1660 1669 1651 1678 1705 1687 1696 1723 1732 1714 1768 1750 1741 1759 1777 1786 1795 1804 1813 1822 1878 1903 1971 1842 1921 1871 1885 1914 1831 2004 1978 1860 1849 1896 1997 1948 1881 1967 1910 1932 1944 2019 2000 1940 1928 1888 1834 1924 1951 1917 1985 1874 1892 1981 2023 1852 1838 1955 1845 1867 2015 1993 2007 1936 1863 1963 1989 1906 1959 2011 1974 1856 1899 2027 2040 2053 2066 2079 2092 2105 2118 2131"/>
+</xmi:XMI>
