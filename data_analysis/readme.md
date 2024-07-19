@@ -4,7 +4,7 @@
 ## analysis.ipynb:
     In this file we check that what dimension reduction is the best for the data.csv . 
     the options :
-    ** PCA
+    . PCA
     * TNSE
     * UMAP
 ## clustering.ipynb:
