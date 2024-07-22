@@ -13,11 +13,11 @@ the options :
 2. TNSE
 3. UMAP
 ## clustering.ipynb:
-    In this part of this section we cluster this data with various algorithms like:
-    * KMeans
-    * Agglomerative
-    * DBSCAN
-    * Optics
-    * MiniBatchKmeans
-    * Brich
-    * Gaussian_Mixture
+In this part of this section we cluster this data with various algorithms like:
+* KMeans
+* Agglomerative
+* DBSCAN
+* Optics
+* MiniBatchKmeans
+* Brich
+* Gaussian_Mixture
