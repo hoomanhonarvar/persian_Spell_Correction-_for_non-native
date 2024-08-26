@@ -1,0 +1,4 @@
+*.keras
+*.pkl
+result_of_train/
+*.csv
