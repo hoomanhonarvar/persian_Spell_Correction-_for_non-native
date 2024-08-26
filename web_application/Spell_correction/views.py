@@ -7,7 +7,11 @@ import re
 from django.conf import settings
 import numpy as np
 from hazm import word_tokenize
+import warnings
+warnings.filterwarnings('ignore')
 
+# Alternatively, to disable only UserWarnings
+warnings.filterwarnings('ignore', category=UserWarning)
 
 pickle_file_path = os.path.join(settings.BASE_DIR, 'Spell_correction/models/all', 'all.pkl')
 with open(pickle_file_path, 'rb') as file:
@@ -45,7 +49,7 @@ def tokenizer(sentence,vocab_to_int):
     tmp.append(vocab_to_int["<eos>"])
     # padded_sequences = tf.keras.preprocessing.sequence.pad_sequences([tmp],maxlen=512 ,padding='post', value=vocab_to_int["<PAD>"])
     return tmp
-def detokenizer(tokens,int_to_vocab=int_to_vocab):
+def detokenizer(tokens,int_to_vocab):
     tmp=""
     for token in tokens:
         tmp+=int_to_vocab[token]+" "
@@ -377,7 +381,7 @@ class Spell_correction(tf.Module):
     self.tokenizers = tokenizers
     self.transformer = transformer
 
-  def __call__(self, sentence, max_length=MAX_TOKENS,vocab_to_int=vocab_to_int):
+  def __call__(self, sentence,vocab_to_int,int_to_vocab, max_length=MAX_TOKENS):
     assert isinstance(sentence, tf.Tensor)
     if len(sentence.shape) == 0:
       sentence = sentence[tf.newaxis]
@@ -426,7 +430,7 @@ class Spell_correction(tf.Module):
     # text = tokenizers.en.detokenize(output)[0]  # Shape: `()`.
 
     # tokens = tokenizers.en.lookup(output)[0]
-    text=detokenizer(output.numpy().tolist()[0])
+    text=detokenizer(output.numpy().tolist()[0],int_to_vocab)
     # Return the tokens
     tokens=[]
     for num in output.numpy().tolist()[0]:
@@ -442,18 +446,83 @@ class Spell_correction(tf.Module):
 
 
 def sentence_corrector(request):
-    model_file_path = os.path.join(settings.BASE_DIR, 'Spell_correction/models/all', 'all.keras')
-    loaded_model = tf.keras.models.load_model(
-        model_file_path)
-    spell_corrector = Spell_correction(tokenizer, loaded_model)
-
     corrected_sentence = None
-
+    batch_nationality = ['Arab','Latin','Turk','Pars','India','Russia','china','Other']
     if request.method == 'POST':
+        int_to_vocab = {}
+        vocab_to_int={}
         sentence = request.POST.get('sentence')
         nationality = request.POST.get('nationality')
+        if nationality=="all":
+            pickle_file_path = os.path.join(settings.BASE_DIR, 'Spell_correction/models/all', 'all.pkl')
+            with open(pickle_file_path, 'rb') as file:
+                vocab_to_int = pickle.load(file)
+            for word, value in vocab_to_int.items():
+                int_to_vocab[value] = word
+            model_file_path = os.path.join(settings.BASE_DIR, 'Spell_correction/models/all', 'all.keras')
+            loaded_model = tf.keras.models.load_model(
+                model_file_path)
+            print(model_file_path,"    ",pickle_file_path)
+
+
+
+        elif nationality=="all_without_validation":
+            pickle_file_path = os.path.join(settings.BASE_DIR, 'Spell_correction/models/all_without_validation', 'all_without_validation.pkl')
+            with open(pickle_file_path, 'rb') as file:
+                vocab_to_int = pickle.load(file)
+            for word, value in vocab_to_int.items():
+                int_to_vocab[value] = word
+            model_file_path = os.path.join(settings.BASE_DIR, 'Spell_correction/models/all_without_validation', 'all_without_validation.keras')
+            loaded_model = tf.keras.models.load_model(
+                model_file_path)
+            print(model_file_path,"    ",pickle_file_path)
+
+
+
+
+        elif nationality in batch_nationality:
+            pickle_file_path = os.path.join(settings.BASE_DIR, 'Spell_correction/models/with_batch_nationality', 'with_batch_nationality.pkl')
+            with open(pickle_file_path, 'rb') as file:
+                vocab_to_int = pickle.load(file)
+            for word, value in vocab_to_int.items():
+                int_to_vocab[value] = word
+            model_file_path = os.path.join(settings.BASE_DIR, 'Spell_correction/models/with_batch_nationality', 'with_batch_nationality.keras')
+            loaded_model = tf.keras.models.load_model(
+                model_file_path)
+            sentence = "[" + nationality + "] " + sentence
+            print(model_file_path,"    ",pickle_file_path)
+
+
+        elif nationality=="without_nationality":
+            pickle_file_path = os.path.join(settings.BASE_DIR, 'Spell_correction/models/without_nationality', 'without_nationality.pkl')
+            with open(pickle_file_path, 'rb') as file:
+                vocab_to_int = pickle.load(file)
+            for word, value in vocab_to_int.items():
+                int_to_vocab[value] = word
+            model_file_path = os.path.join(settings.BASE_DIR, 'Spell_correction/models/without_nationality', 'without_nationality.keras')
+            loaded_model = tf.keras.models.load_model(
+                model_file_path)
+            print(model_file_path,"    ",pickle_file_path)
+
+
+
+
+        else:
+            pickle_file_path = os.path.join(settings.BASE_DIR, 'Spell_correction/models/with_nationality', 'with_nationality.pkl')
+            with open(pickle_file_path, 'rb') as file:
+                vocab_to_int = pickle.load(file)
+            for word, value in vocab_to_int.items():
+                int_to_vocab[value] = word
+            model_file_path = os.path.join(settings.BASE_DIR, 'Spell_correction/models/with_nationality', 'with_nationality.keras')
+            loaded_model = tf.keras.models.load_model(
+                model_file_path)
+            sentence = "[" + nationality + "] " + sentence
+            print(model_file_path,"    ",pickle_file_path)
+
+
+        spell_corrector = Spell_correction(tokenizer, loaded_model)
 
         # Correct the sentence using the model
-        corrected_sentence,_,_ = spell_corrector(tf.constant(sentence))
+        corrected_sentence,_,_ = spell_corrector(tf.constant(sentence),vocab_to_int,int_to_vocab)
 
     return render(request, 'corrector.html', {'corrected_sentence': corrected_sentence})
