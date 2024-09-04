@@ -19,6 +19,6 @@ from django.urls import path,include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('Spell_correction.urls'),name="Spell_correction")
-
+    path('', include('Spell_correction.urls'),name="Spell_correction"),
+    path('error-detection/', include('error_detection.urls')),
 ]
