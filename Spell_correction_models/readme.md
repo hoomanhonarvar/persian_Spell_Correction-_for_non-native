@@ -2,7 +2,7 @@
 In spell correction tasks, inputs are sentences which includes errors in 4 category and outputs should be the correct sentence which recognize error and fix it properly.  
 In this part, the extracted data are used in our model.  
 we picked a transformer model for this task :  
-  ![transformer structure](https://miro.medium.com/v2/resize:fit:1400/1*10K7SmGoJ5zAtjkGfNfjkg.png)
+  ![transformer structure](https://miro.medium.com/v2/resize:fit:1400/1*10K7SmGoJ5zAtjkGfNfjkg.png)  
 This section includes three stages:
 ## Preprocess 
 To preprocessing the data, additional character such as @,#,url,... and any noises will be removed.  
