@@ -3,6 +3,7 @@ In spell correction tasks, inputs are sentences which includes errors in 4 categ
 In this part, the extracted data are used in our model.  
 we picked a transformer model for this task :  
   ![transformer structure](https://miro.medium.com/v2/resize:fit:1400/1*10K7SmGoJ5zAtjkGfNfjkg.png)  
+    
 This section includes three stages:
 ## Preprocess 
 To preprocessing the data, additional character such as @,#,url,... and any noises will be removed.  
@@ -19,3 +20,13 @@ Model is tested with 5 scales:
 - f1-score
 - precision
 - recall
+
+# Models
+The transfomer model are trained in three diferent data which the diferences are in nationality label that concate to the input.  
+## without nationality  
+this model is simply trained with wrong sentences as input and correct sentence as output.
+## with nationality  
+inputs are wrong sentences which has been concated with ' [ nationality ] ' .  
+Nationlity labels are in 78 classes which has been devided unbalanced.  
+## with batch nationality  
+In this model, inputs are concated with nationalities in 6 batches like **Arab** , **Turk** , **Latin**  ...  .
