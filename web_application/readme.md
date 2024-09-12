@@ -7,7 +7,7 @@ This web application is built using Django and serves two main purposes:
 2. **Error Detection** for identifying grammatical, syntactic, and spelling errors in Persian text using ParsBERT.
 
 The application provides two endpoints:
-- `localhost/spell_correction`: Endpoint for interacting with the spell correction model.
+- `localhost/`: Endpoint for interacting with the spell correction model.
 - `localhost/error_detection`: Endpoint for interacting with the error detection model.
 
 ## Features
@@ -15,12 +15,7 @@ The application provides two endpoints:
 - **Spell Correction**: Automatically corrects spelling mistakes in Persian text, with a focus on errors made by non-native speakers. Additionally, the model provides insights based on the learner's nationality to better tailor corrections.
 - **Error Detection**: Detects and highlights various language errors (spelling, grammar, and syntax) in Persian sentences using the ParsBERT model.
 
-## Project Structure
-
-The project follows the standard Django structure:   
-. ├── myproject/ │ ├── settings.py │ ├── urls.py │ ├── views.py │ ├── models.py │ └── templates/ │ └── base.html ├── spell_correction/ │ ├── urls.py │ ├── views.py │ └── models.py ├── error_detection/ │ ├── urls.py │ ├── views.py │ └── models.py ├── manage.py └── 
-
- **myproject/**: Contains the core configuration files for the Django project.
+ **final_django/**: Contains the core configuration files for the Django project.
 - **spell_correction/**: Application that handles spell correction tasks.
 - **error_detection/**: Application for detecting language errors using ParsBERT.
 - **templates/**: HTML templates used for rendering the web interface.
